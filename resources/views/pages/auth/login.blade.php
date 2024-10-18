@@ -36,7 +36,7 @@ new class extends Component {
                 </div>
 
                 <div class="space-y-6">
-                    <flux:input wire:model='form.email' label="Email" type="email" placeholder="Your email address" tabindex="1" />
+                    <flux:input wire:model='form.email' label="Email" type="email" placeholder="Your email address" autofocus tabindex="1" />
 
                     <flux:field>
                         <flux:label class="flex justify-between">

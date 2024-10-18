@@ -41,16 +41,13 @@ new class extends Component {
                     <flux:field>
                         <flux:label class="flex justify-between">
                             Password
-
                             <flux:link href="{{ route('password.request') }}" wire:navigate variant="subtle">Forgot password?
                             </flux:link>
                         </flux:label>
-
                         <flux:input wire:model='form.password' type="password" placeholder="Your password" />
 
                         <flux:error name="form.password" />
                     </flux:field>
-
                     <flux:checkbox wire:model="form.remember" label="Remember me" />
                 </div>
 

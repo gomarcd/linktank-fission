@@ -14,7 +14,7 @@ class ArchiveFactory extends Factory
         return [
             'bookmark_id' => \App\Models\Bookmark::factory(),
             'archive_service' => $this->faker->randomElement(['Wayback Machine', 'Archive.is']),
-            'archive_url' => $this->faker->url,
+            'archive_url' => $this->faker->url(),
             'archived_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ];
     }

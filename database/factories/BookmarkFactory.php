@@ -13,9 +13,9 @@ class BookmarkFactory extends Factory
     public function definition()
     {
         return [
-            'url' => $this->faker->url,
-            'title' => $this->faker->sentence,
-            'description' => $this->faker->paragraph,
+            'url' => $this->faker->url(),
+            'title' => $this->faker->sentence(),
+            'description' => $this->faker->paragraph(),
             'user_id' => \App\Models\User::factory(),
         ];
     }

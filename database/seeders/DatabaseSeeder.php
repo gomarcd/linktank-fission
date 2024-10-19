@@ -11,14 +11,11 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
-        Bookmark::factory(10)
-            ->for($user)
-            ->has(Archive::factory(2))
-            ->create();
+        User::all()->each(function ($user) {
+            Bookmark::factory(10)
+                ->for($user)
+                ->has(Archive::factory(2))
+                ->create();
+        });
     }
 }

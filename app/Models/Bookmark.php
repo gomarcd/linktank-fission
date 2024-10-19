@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Bookmark extends Model
 {
+    use HasFactory;
+    
     protected $fillable = [
         'url',
         'title',

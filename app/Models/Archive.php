@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Archive extends Model
 {
+    use HasFactory;
+    
     protected $fillable = [
         'bookmark_id',
         'archive_service',
